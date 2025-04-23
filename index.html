@@ -10,7 +10,7 @@
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -58,7 +58,7 @@
                         </li>
 
                         <li class="nav__items">
-                            <a href="#projects" class="nav__link">
+                            <a href="#blog" class="nav__link">
                                 <i class="ri-image-line"></i> Blogs
                             </a>
                         </li>
@@ -482,10 +482,10 @@
                 <span class="section__subtitle">Most Recent Work</span>
 
                 <dev class="container section__border">
-                    <div class="projects__container">
-                        <div>
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
                             <!--==================== PROJECTS 1 ====================-->
-                             <div class="projects__content">
+                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/project1.jpg" alt="projects image" class="projects__img">
 
                                 <div>
@@ -499,7 +499,7 @@
                              </div>
 
                              <!--==================== PROJECTS 2 ====================-->
-                             <div class="projects__content">
+                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/project2.jpg" alt="projects image" class="projects__img">
 
                                 <div>
@@ -513,7 +513,7 @@
                              </div>
 
                              <!--==================== PROJECTS 3 ====================-->
-                             <div class="projects__content">
+                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/project3.jpg" alt="projects image" class="projects__img">
 
                                 <div>
@@ -526,7 +526,7 @@
                                 </div>
                              </div>
                              <!--==================== PROJECTS 4 ====================-->
-                             <div class="projects__content">
+                             <div class="projects__content swiper-slide">
                                 <img src="assets/img/project4.jpg" alt="projects image" class="projects__img">
 
                                 <div>
@@ -539,6 +539,17 @@
                                 </div>
                              </div>
                         </div>
+
+                        <!-- Swipwe Arrows -->
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i> 
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </dev>
             </section>
@@ -567,7 +578,7 @@
         <script src=""></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
         
         <!--=============== EMAIL JS ===============-->
         

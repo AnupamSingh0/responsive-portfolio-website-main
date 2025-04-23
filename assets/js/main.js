@@ -5,7 +5,7 @@ const navMenu = document.getElementById('nav-menu'),
 
 /* Menu show */
 if(navToggle){
-    navToggle.addEventListener('click', () =>{
+    navToggle.addEventListener('click', () =>{ 
         navMenu.classList.add('show-menu')
     })
 }
@@ -28,6 +28,26 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER PROJECTS ===============*/
+let swiperProjects = new Swiper(".projects__container", {
+    loop: true,
+    spaceBetween: 24,
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: -56,
+        },
+    },
+});
 
 
 /*=============== SWIPER TESTIMONIAL ===============*/
